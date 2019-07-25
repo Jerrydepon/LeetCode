@@ -14,13 +14,13 @@ class Solution:
         
         ia, ib = len(a) // 2, len(b) // 2
         ma, mb = a[ia], b[ib]
-        if ia + ib < k:
+        if ia + ib < i:
             if ma > mb:
                 return self.searchMedian(a, b[ib+1:], i-ib-1)
             else:
                 return self.searchMedian(a[ia+1:], b, i-ia-1)
         else:
             if ma > mb:
-                return self.searchMedian(a[:ia], b, k)
+                return self.searchMedian(a[:ia], b, i)
             else:
-                return self.searchMedian(a, b[:ib], k)
+                return self.searchMedian(a, b[:ib], i)
