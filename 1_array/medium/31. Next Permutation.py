@@ -1,3 +1,6 @@
+# find index i in the numbers where number at index i is smaller than the following number
+# switch the number at index i with number larger than it (searching from the end)
+# sort the numbers after index i
 class Solution:
     def nextPermutation(self, nums: List[int]) -> None:
         """
@@ -15,5 +18,6 @@ class Solution:
             while i < r and nums[i] >= nums[r]:
                 r -= 1
             nums[i], nums[r] = nums[r], nums[i]
+            
         nums[i+1:] = sorted(nums[i+1:]) 
             

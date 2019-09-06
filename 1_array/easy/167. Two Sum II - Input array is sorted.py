@@ -1,3 +1,5 @@
+# iterate through numbers, and use a dic to keep the index (key: target-item, value: index) 
+# return both index if find the match key and number
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         if len(numbers) < 2:

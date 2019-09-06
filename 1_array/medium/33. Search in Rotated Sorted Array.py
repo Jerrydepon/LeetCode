@@ -1,3 +1,7 @@
+# (be careful about the equal sign)
+# use binary search
+# case 1: nums[l] <= nums[mid]:
+# case 2: nums[l] > nums[mid]:
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
         if len(nums) == 0:

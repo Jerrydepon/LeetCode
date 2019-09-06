@@ -1,3 +1,4 @@
+# iterate through price and add profit to the sum profit if profit = (price[i]-price[-1]) > 0
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         if not prices or len(prices) == 1:
