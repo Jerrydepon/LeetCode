@@ -1,3 +1,5 @@
+# (check -- if matrix and matrix[0])
+# matrix.pop()
 class Solution:
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
         res = []
@@ -13,3 +15,4 @@ class Solution:
                 for row in matrix[::-1]:
                     res += [row.pop(0)]
         return res
+

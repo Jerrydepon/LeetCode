@@ -1,3 +1,6 @@
+# make two lists of sorted start time and sorted end time
+# loop through start time (use two pointers to compare start and end time) 
+# increase the number of rooms if there is no available rooms
 class Solution:
     def minMeetingRooms(self, intervals: List[List[int]]) -> int:
         start, end = [], []

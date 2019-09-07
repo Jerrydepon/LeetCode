@@ -1,3 +1,7 @@
+# nums.append(0) to avoid counting 0 as missing
+# add len(nums) to numbers at the valid index (0 <= number < len(nums))
+# check index till finding interger smaller than len(nums)
+# if no missing, return len(nums)
 class Solution:
     def firstMissingPositive(self, nums: List[int]) -> int:
         nums.append(0)

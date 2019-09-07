@@ -1,3 +1,6 @@
+# insert interval if interval[1] < newInterval[0]
+# insert newInterval if there is no overlap, and return result
+# change newInterval if there is overlap, and keep looping through intervals
 class Solution:
     def insert(self, intervals, newInterval):
         res = []

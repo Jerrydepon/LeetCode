@@ -1,3 +1,5 @@
+# recode the product intergers before each element
+# multpile by the product of integers after each element
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         output, product = [], 1

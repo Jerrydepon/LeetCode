@@ -1,3 +1,7 @@
+# 0: dead -> dead
+# 1: live -> live
+# 2: dead -> live
+# 3: live -> dead
 from copy import deepcopy
 
 class Solution:

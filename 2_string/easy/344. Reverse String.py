@@ -1,3 +1,4 @@
+# switch from both ends and converge toward center
 class Solution:
     def reverseString(self, s: List[str]) -> None:
         """

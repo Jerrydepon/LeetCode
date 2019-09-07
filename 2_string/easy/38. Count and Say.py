@@ -1,3 +1,4 @@
+# iterate through n-1 terms and update result by memorizing count of same number
 class Solution:
     def countAndSay(self, n: int) -> str:
         re = "1"

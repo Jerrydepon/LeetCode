@@ -1,3 +1,5 @@
+# if there is overlap, modify the interval inplace and delete the interval
+# (use try-except to avoid out of index)
 class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
         intervals = sorted(intervals, key=lambda x: x[0])

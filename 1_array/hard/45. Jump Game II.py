@@ -1,3 +1,4 @@
+# for each step, try the possible ways of jump
 class Solution:
     def jump(self, nums: List[int]) -> int:
         res, start, end = 0, 0, 0
