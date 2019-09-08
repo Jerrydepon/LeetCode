@@ -1,3 +1,6 @@
+# odd and even case
+# check each case and word from the center to outward
+# max(a, b, key=len)
 class Solution:
     def longestPalindrome(self, s: str) -> str:
         self.longest = ""

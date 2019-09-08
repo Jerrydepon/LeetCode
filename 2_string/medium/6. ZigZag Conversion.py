@@ -1,3 +1,5 @@
+# make a list of numRows strings and join them in the end
+# change the direction of step if reach the end
 class Solution:
     def convert(self, s: str, numRows: int) -> str:
         li = ['' for _ in range(numRows)]
