@@ -5,6 +5,8 @@
 #         self.left = None
 #         self.right = None
 
+# from leaves to count the depths of left and right descendants of each node
+# mark as False if difference is larger than 1
 class Solution:
     def isBalanced(self, root: TreeNode) -> bool:
         self.balanced = True

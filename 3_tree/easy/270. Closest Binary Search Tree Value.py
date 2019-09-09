@@ -5,6 +5,9 @@
 #         self.left = None
 #         self.right = None
 
+# from root, find a path with number closer to the target
+# keep the difference and each value of node in a list, or return if find exactly the same value
+# return the value with smalllest difference
 class Solution:
     def closestValue(self, root: TreeNode, target: float) -> int:
         li = []

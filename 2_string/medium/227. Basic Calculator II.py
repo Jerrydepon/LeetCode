@@ -1,6 +1,9 @@
+# if a whole number, push to the stack 
+# do action depending on different signs
+# (mind the division truncation)
 class Solution:
     def calculate(self, s: str) -> int:
-        stack, num, power, sign = [], 0, 0, '+'
+        stack, num, sign = [], 0, '+'
         for i, d in enumerate(s):
             if d.isdigit():
                 num = 10 * num + int(d)

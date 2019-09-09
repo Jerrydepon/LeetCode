@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+# cheach if the node is not none, and recursively assign left and right node
 class Solution:
     def invertTree(self, root: TreeNode) -> TreeNode:
         if root:

@@ -5,10 +5,9 @@
 #         self.left = None
 #         self.right = None
 
+# traverse through tree and check the valid range for each node in the tree
 class Solution:
     def isValidBST(self, root: TreeNode) -> bool:
-        if not root:
-            return True
         return self.traverseTree(root, -float("inf"), float("inf"))
     
     def traverseTree(self, node, l_range, r_range):
@@ -16,6 +15,6 @@ class Solution:
             return True  
         if not(l_range < node.val < r_range):
             return False
-        l = self.traverseTree(node.left, l_range, min(r_range, node.val))
-        r = self.traverseTree(node.right, max(l_range, node.val), r_range)
+        l = self.traverseTree(node.left, l_range, node.val)
+        r = self.traverseTree(node.right, node.val, r_range)
         return l and r

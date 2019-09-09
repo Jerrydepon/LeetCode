@@ -5,6 +5,9 @@
 #         self.left = None
 #         self.right = None
 
+# create a dictionary to record sum of paths (initialize {0:1})
+# traverse through the tree, find path, add path to dictionary
+# remember to release the element in dictionary whenever one path is finished
 class Solution:
     def pathSum(self, root: TreeNode, sum: int) -> int:
         self.res = 0

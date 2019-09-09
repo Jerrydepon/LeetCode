@@ -5,6 +5,8 @@
 #         self.left = None
 #         self.right = None
 
+# traverse through tree s, if the value of node is equal to the root of t, check their subtree
+# mind the way to check the leaf node
 class Solution:
     def isSubtree(self, s: TreeNode, t: TreeNode) -> bool:
         if not s:
@@ -13,8 +15,7 @@ class Solution:
         if s.val == t.val:
             subtree = self.checkSubtree(s, t)
         return subtree or self.isSubtree(s.left, t) or self.isSubtree(s.right, t)
-        
-            
+               
     def checkSubtree(self, s, t):
         if not (s and t):
             return s == t

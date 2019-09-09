@@ -5,6 +5,8 @@
 #         self.left = None
 #         self.right = None
 
+# use deque to store layer of nodes
+# reverse direction for each layer
 import collections
 class Solution:
     def zigzagLevelOrder(self, root: TreeNode) -> List[List[int]]:
@@ -13,7 +15,7 @@ class Solution:
         output, queue, direction = [], collections.deque([root]), 1
         while queue:
             layer = []
-            for _ in range(len(queue)):medium
+            for _ in range(len(queue)):
                 node = queue.popleft()
                 if node.left:
                     queue.append(node.left)

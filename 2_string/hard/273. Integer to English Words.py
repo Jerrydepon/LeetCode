@@ -1,3 +1,5 @@
+# deal with number > 1000
+# each space can pair with number < 1000 (hundred)
 class Solution:
     def numberToWords(self, num: int) -> str:
         to19 = 'One Two Three Four Five Six Seven Eight Nine Ten Eleven Twelve \
@@ -15,7 +17,7 @@ class Solution:
                 return [to19[num//100-1]] + ['Hundred'] + transfer(num%100)
             
             quotient, remain = num//1000, num%1000
-            space = [thousandth[idx]] if quotient % 1000 !=0 else []
+            space = [thousandth[idx]] if quotient % 1000 != 0 else []
             return transfer(quotient, idx+1) + space + transfer(remain, 0)
                                              
         return ' '.join(transfer(num, 0)) or 'Zero'

@@ -5,6 +5,9 @@
 #         self.left = None
 #         self.right = None
 
+# find the maximum path for each node (node + left or right)
+# each node represents a maximum sum of node and one of its path
+# search for a node with maximum sum of node, left, and right 
 class Solution:
     def maxPathSum(self, root: TreeNode) -> int:
         self.max_sum = -float('inf')

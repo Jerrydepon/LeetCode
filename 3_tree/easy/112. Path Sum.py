@@ -5,17 +5,15 @@
 #         self.left = None
 #         self.right = None
 
+# check if the node is a leaf and approach the sum by step
 class Solution:
     def hasPathSum(self, root: TreeNode, sum: int) -> bool:
-        if not root:
-            return False
-        
         def nextNode(node, sum):
             if not node:
                 return False
             if node.val == sum and not node.left and not node.right:
                 return True
-        
+       
             l = nextNode(node.left, sum-node.val)
             r = nextNode(node.right, sum-node.val)
             

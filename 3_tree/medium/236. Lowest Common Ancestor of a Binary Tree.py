@@ -5,6 +5,8 @@
 #         self.left = None
 #         self.right = None
 
+# similar to Q.235, but it's a binary tree not binary search tree
+# a node is LCA if both left and right path have a target node
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
         if not root:

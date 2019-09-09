@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+# similar to depth problem but keep track of the maximum diameter (l+r)
 class Solution:
     def diameterOfBinaryTree(self, root: TreeNode) -> int:
         self.length = 0

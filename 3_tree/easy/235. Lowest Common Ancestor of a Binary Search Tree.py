@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+# loop until node is between p and q, or node equal to either p or q
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
         while root:

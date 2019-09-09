@@ -1,3 +1,5 @@
+# greedily loop through each possible roman number and corresponding number
+# check how many times for each roman number
 class Solution:
     def intToRoman(self, num: int) -> str:
         roman_li = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I']

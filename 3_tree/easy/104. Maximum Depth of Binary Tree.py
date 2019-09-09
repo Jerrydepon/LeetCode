@@ -5,11 +5,9 @@
 #         self.left = None
 #         self.right = None
 
+# from leaves and count each node's depth by max depth of left or right node plus 1
 class Solution:
     def maxDepth(self, root: TreeNode) -> int:
-        if not root:
-            return 0
-        
         def maxSubDepth(node):
             if not node:
                 return 0

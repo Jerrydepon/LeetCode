@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+# outpair & inpair
 class Solution:
     def isSymmetric(self, root: TreeNode) -> bool:
         if not root:

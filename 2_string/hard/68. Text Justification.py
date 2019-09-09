@@ -1,3 +1,6 @@
+# append word to line if the width is smaller than the line
+# if words+space+nextWord is larger than width, equally allocate space between words
+# be careful with last word (left-justified)
 class Solution:
     def fullJustify(self, words: List[str], maxWidth: int) -> List[str]:
         res, num_char, line = [], 0, []

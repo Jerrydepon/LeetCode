@@ -5,6 +5,13 @@
 #         self.left = None
 #         self.right = None
 
+# serialize: use deque to append result 
+# mind the use of ([root])
+
+# deserialize: 
+# split first to convert number to string    
+# use deque to traverse through tree
+# use idx to point to element in the list
 import collections
 class Codec:
     def serialize(self, root):

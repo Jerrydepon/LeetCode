@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+# binary search for each node and for node.left and node.right
 class Solution:
     def sortedArrayToBST(self, nums: List[int]) -> TreeNode:
         if not nums:

@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+# traverse through tree and add path to result if meet a leaf
 class Solution:
     def binaryTreePaths(self, root: TreeNode) -> List[str]:
         if not root:
