@@ -1,15 +1,14 @@
 # Definition for singly-linked list.
-# class ListNode(object):
+# class ListNode:
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
-    def hasCycle(self, head):
-        """
-        :type head: ListNode
-        :rtype: bool
-        """
+# fast pointer moves two steps and slow pointer moves one step per loop
+# no loop if fast meets the Null end
+# find loop if fast meets with slow
+class Solution:
+    def hasCycle(self, head: ListNode) -> bool:
         if not head:
             return False
         
@@ -22,4 +21,4 @@ class Solution(object):
             
             if fast is slow:
                 return True
-        return False
+        return False        

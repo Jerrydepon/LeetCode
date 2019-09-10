@@ -4,6 +4,9 @@
 #         self.val = x
 #         self.next = None
 
+# jump, l, r, 
+# pre, cur, temp,
+# dummy
 class Solution:
     def reverseKGroup(self, head: ListNode, k: int) -> ListNode:
         dummy = jump = ListNode(0)
@@ -15,7 +18,6 @@ class Solution:
                 r = r.next
                 count += 1
             if count == k:
-                print(l.val)
                 pre, cur = r, l
                 for _ in range(k):
                     temp = cur.next

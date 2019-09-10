@@ -4,6 +4,7 @@
 #         self.val = x
 #         self.next = None
 
+# modified in-place
 class Solution:
     def deleteNode(self, node):
         """
@@ -11,4 +12,4 @@ class Solution:
         :rtype: void Do not return anything, modify node in-place instead.
         """
         node.val = node.next.val
-        node.next = node.next.next        
+        node.next = node.next.next

@@ -4,6 +4,9 @@
 #         self.val = x
 #         self.next = None
 
+# find the difference in length of two lists
+# move (difference) steps from head of longer list
+# move one step for each list to find the match
 class Solution(object):
     def getIntersectionNode(self, headA, headB):
         """
@@ -12,9 +15,9 @@ class Solution(object):
         """
         if not headA or not headB:
             return None
+        
         cnt_a = 0
         cnt_b = 0
-        
         hA, hB = headA, headB
         while headA:
             cnt_a += 1

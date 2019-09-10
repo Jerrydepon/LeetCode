@@ -1,3 +1,9 @@
+# method 1: double linked list + dictionary
+#   dic: key-key, value-Node(key, value)
+#   
+# method 2: use OrderedDict()
+#   the collections.OrderedDict() build a dictionary which appends new added pair in the end
+#   use popitem(last=False) to pop oldest pair
 class Node:
     def __init__(self, key, val):
         self.key = key

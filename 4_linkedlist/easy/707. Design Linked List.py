@@ -1,3 +1,6 @@
+# Node to make new node in linked list
+# initialize head and size
+# each function is self-explained
 class Node(object):
 
     def __init__(self, val):
