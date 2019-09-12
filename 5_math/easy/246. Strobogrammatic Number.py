@@ -1,3 +1,4 @@
+# use two pointers from two ends moving inward to check if in the specific set
 class Solution:
     def isStrobogrammatic(self, num: str) -> bool:
         if len(num) == 0:

@@ -1,3 +1,4 @@
+# use binary search to find the number in the range of mid**2 <= x < (mid+1)**2
 class Solution:
     def mySqrt(self, x: int) -> int:
         if x == 1:

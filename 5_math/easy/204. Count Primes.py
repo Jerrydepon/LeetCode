@@ -1,3 +1,5 @@
+# trun [i**2:n:i] to False
+# (mind the method of assigning False)
 class Solution:
     def countPrimes(self, n: int) -> int:
         if n == 0 or n == 1:

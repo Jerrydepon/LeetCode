@@ -1,3 +1,4 @@
+# use a list to check duplicated number (loop)
 class Solution:
     def isHappy(self, n: int) -> bool:
         tmp_list = []

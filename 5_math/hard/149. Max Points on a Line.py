@@ -1,3 +1,8 @@
+# iterate through each pair and calculate their slope
+# find the same point
+# use GCD to simplify the fraction
+# (mind the way to use GCD)
+# use a dictionary to count times of slope
 class Solution:
     def maxPoints(self, points: List[List[int]]) -> int:
         def gcd(a, b):
