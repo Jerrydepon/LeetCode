@@ -1,3 +1,5 @@
+# initialize first row and first column
+# if characters are not equal, plus 1 to the dp[i][j] from smallestone of three directions
 class Solution:
     def minDistance(self, word1: str, word2: str) -> int:
         m, n = len(word1), len(word2)

@@ -1,3 +1,5 @@
+# check possible way for each number of coins
+# remember to check if valid solution
 class Solution:
     def coinChange(self, coins: List[int], amount: int) -> int:
         dp = [0] + [float('inf')] * amount

@@ -1,3 +1,5 @@
+# case 1: add one digit
+# case 2: add two digits
 class Solution:
     def numDecodings(self, s: str) -> int:
         if s[0] == "0":

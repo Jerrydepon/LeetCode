@@ -1,3 +1,4 @@
+# max(res[i-2]+nums[i], res[i-1])
 class Solution:
     def rob(self, nums: List[int]) -> int:
         if not nums:

@@ -1,3 +1,9 @@
+# for first row, deal with '*' condition
+# iterate through both strings
+#   case 1: equal character or '.'
+#   case 2: '*' 
+#           dp[i][j] = dp[i][j-2]
+#           '.' or s[i-1] == p[j-2]  
 class Solution:
     def isMatch(self, s: str, p: str) -> bool:
         dp = [[False] * (len(p)+1) for _ in range(len(s)+1)]

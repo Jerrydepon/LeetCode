@@ -1,3 +1,4 @@
+# can only move down or right
 class Solution:
     def uniquePaths(self, m: int, n: int) -> int:
         if not m or not n:

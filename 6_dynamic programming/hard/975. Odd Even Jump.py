@@ -1,3 +1,4 @@
+# too hard for now
 class Solution:
     def oddEvenJumps(self, A: List[int]) -> int:
         # sort indexes of A by values in A
