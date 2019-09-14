@@ -23,6 +23,9 @@
 #        :rtype List[NestedInteger]
 #        """
 
+# pop and append if meets single integer
+# mind if way to use getList() and getInteger()
+# reverse the elements in each nested list
 class NestedIterator(object):
 
     def __init__(self, nestedList):

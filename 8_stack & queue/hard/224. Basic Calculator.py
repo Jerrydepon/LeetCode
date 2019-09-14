@@ -1,3 +1,5 @@
+# (res, sign)
+# '(': append, ')': pop
 class Solution:
     def calculate(self, s: str) -> int:
         res, num, sign, stack = 0, 0, 1, []

@@ -1,15 +1,20 @@
+# [tmp_string, times]
+# isdigit() : deal with times
+# "[" : append
+# "]" : pop
+# isalpha : add character
 class Solution:
     def decodeString(self, s: str) -> str:
         num, stack = "", [["", 1]]
-        for digit in s:
-            if digit.isdigit():
-                num += digit
-            elif digit == "[":
+        for d in s:
+            if d.isdigit():
+                num += d
+            elif d == "[":
                 stack.append(["", int(num)])
                 num = ""
-            elif digit.isalpha():
-                stack[-1][0] += digit
-            elif digit == "]":
+            elif d.isalpha():
+                stack[-1][0] += d
+            elif d == "]":
                 char, times = stack.pop()
                 stack[-1][0] += char*times  
             else:

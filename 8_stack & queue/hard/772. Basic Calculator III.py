@@ -1,3 +1,6 @@
+# using two stacks, operation & nums
+# mind how to check precedence
+# mind '-' after '('
 class Solution:
     def calculate(self, s: str) -> int:
         def operation(op, second, first):
