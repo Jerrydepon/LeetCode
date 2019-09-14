@@ -1,3 +1,5 @@
+# only find the subsets in the remaining list
+# append result for each turn
 from itertools import combinations
 
 class Solution:

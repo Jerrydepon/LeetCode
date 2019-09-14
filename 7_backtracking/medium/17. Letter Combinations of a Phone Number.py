@@ -1,3 +1,4 @@
+# iterate through string, each loop uses the previous result
 class Solution:
     def letterCombinations(self, digits: str) -> List[str]:
         if digits == "":

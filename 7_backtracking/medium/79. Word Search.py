@@ -1,3 +1,6 @@
+# search the first occurrence of first word in the board
+# find the next word in four directions
+# (mind the use of tmp for board recovery)
 class Solution:
     def exist(self, board: List[List[str]], word: str) -> bool:
         for i in range(len(board)):

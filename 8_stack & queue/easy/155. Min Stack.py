@@ -1,3 +1,4 @@
+# push (x, min_value)
 class MinStack:
 
     def __init__(self):

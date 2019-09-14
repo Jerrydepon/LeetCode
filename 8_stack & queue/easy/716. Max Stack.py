@@ -1,3 +1,5 @@
+# two stacks, one for element, another for maximum element
+# popMax: remove elements behind maximum element first, remove maximum element, and append other elements back
 class MaxStack:
     def __init__(self):
         """

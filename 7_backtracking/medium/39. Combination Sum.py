@@ -1,3 +1,5 @@
+# sort the candidates first
+# like iterate through all possible combination from each starting point
 class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
         candidates = sorted(candidates)

@@ -1,3 +1,5 @@
+# keep track of the number of left and right parentheses
+# left >= right
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
         l = r = n

@@ -1,3 +1,5 @@
+# extract one integer for each turn
+# append result if no integer in the list
 class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
         self.output = []
@@ -10,3 +12,4 @@ class Solution:
         for i, num in enumerate(nums):
             self.addPermute(nums[:i]+nums[i+1:], tmp+[num])
             
+        
