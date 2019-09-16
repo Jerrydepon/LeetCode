@@ -1,3 +1,7 @@
+# use defaultdict(list) to make value a list
+# find path lexically
+# if cannot find a path, restore the route and dictionary for next path
+# stop searching if find a path
 import collections
 
 class Solution:

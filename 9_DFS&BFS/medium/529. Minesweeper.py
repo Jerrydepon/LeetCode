@@ -1,3 +1,6 @@
+# first, decide if its bomb
+# second, decide if there are bombs around
+# if no bombs around, dfs neighbor squares
 class Solution:
     def updateBoard(self, board: List[List[str]], click: List[int]) -> List[List[str]]:
         if not board:

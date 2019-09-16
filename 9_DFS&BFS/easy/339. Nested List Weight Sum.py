@@ -41,18 +41,10 @@
 #        :rtype List[NestedInteger]
 #        """
 
-# level_sum is not reset to keep adding the number of previous depth
+# recusion to get the multiplication of depth and number
 class Solution:
-    def depthSumInverse(self, nestedList: List[NestedInteger]) -> int:
-        res, level_sum = 0, 0
-        while nestedList:
-            temp_li = []
-            for element in nestedList:
-                if element.isInteger():
-                    level_sum += element.getInteger()
-                else:
-                    for li in element.getList():
-                        temp_li.append(li)
-            res += level_sum
-            nestedList = temp_li
-        return res
+    def depthSum(self, nestedList: List[NestedInteger]) -> int:
+        def scanList(curr_list, depth):
+            return sum(depth * x.getInteger() if x.isInteger() else scanList(x.getList(), depth + 1) for x in curr_list)
+    
+        return scanList(nestedList, 1)        

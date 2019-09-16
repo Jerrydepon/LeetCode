@@ -1,3 +1,5 @@
+# mark visit[i] = 1 for valid course
+# mark visit[i] = -1 for under checking
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
         graph = [[] for _ in range(numCourses)]

@@ -1,3 +1,5 @@
+# count l and r (if l != 0, minus first if meets r)
+# number of l and r + remaining excess l and r
 class Solution:
     def removeInvalidParentheses(self, s: str) -> List[str]:
         l, r = 0, 0

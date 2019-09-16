@@ -1,3 +1,4 @@
+# too hard for now
 import collections
 class Solution:
     def alienOrder(self, words: List[str]) -> str:
@@ -16,6 +17,8 @@ class Solution:
                         mapping[key1].add(key2)
                         letters[key2] += 1
                     break
+        print(letters)
+        print(mapping)
 
         res = ''
         queue = collections.deque()

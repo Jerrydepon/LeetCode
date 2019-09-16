@@ -1,3 +1,4 @@
+# be careful about defaultdict(list), [] and [[]]
 import collections
 class Solution:
     def findLadders(self, beginWord: str, endWord: str, wordList: List[str]) -> List[List[str]]:

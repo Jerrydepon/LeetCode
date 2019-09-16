@@ -1,3 +1,4 @@
+# for each island count, make connected '1' into '#'
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
         cnt = 0

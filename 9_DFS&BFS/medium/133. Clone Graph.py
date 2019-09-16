@@ -5,6 +5,8 @@ class Node:
         self.val = val
         self.neighbors = neighbors
 """
+
+# dictionary + queue
 import collections
 
 class Solution:
