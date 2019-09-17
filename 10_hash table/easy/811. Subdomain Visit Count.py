@@ -1,3 +1,5 @@
+# split into number and domain
+# count the the of domain and sub-domains
 class Solution:
     def subdomainVisits(self, cpdomains: List[str]) -> List[str]:
         dic = {}

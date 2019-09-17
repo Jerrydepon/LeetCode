@@ -1,3 +1,6 @@
+# using missing to decide if containing all characters
+# trick to find the real starting point
+# change window if find smaller one
 import collections
 class Solution:
     def minWindow(self, s: str, t: str) -> str:

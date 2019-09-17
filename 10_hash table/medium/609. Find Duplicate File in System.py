@@ -1,3 +1,5 @@
+# use of 'partition()'
+# use of 'defaultdict(list)'
 import collections
 
 class Solution:

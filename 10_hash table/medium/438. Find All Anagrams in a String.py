@@ -1,3 +1,5 @@
+# use Counter to keep track of the counted elements in the scope
+# add one, check equality, delete previous one (remember to delete if count==0)
 from collections import Counter
 class Solution:
     def findAnagrams(self, s: str, p: str) -> List[int]:

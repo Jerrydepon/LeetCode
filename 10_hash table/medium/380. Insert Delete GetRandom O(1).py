@@ -1,3 +1,5 @@
+# dictionary -> key: number, value: index in the list
+# remove process first switch the removed one and last element
 import random
 
 class RandomizedSet:

@@ -1,3 +1,4 @@
+# notice: 'list' is an unhashable type, transfer to tuple instead
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         # # redundant

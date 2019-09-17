@@ -1,3 +1,5 @@
+# initialize 1 for modulus 0
+# add 1 to number of combination
 class Solution:
     def subarraysDivByK(self, A: List[int], K: int) -> int:
         li = [1] + (K-1) * [0]

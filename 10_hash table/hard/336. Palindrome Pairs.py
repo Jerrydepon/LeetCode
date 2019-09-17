@@ -1,3 +1,5 @@
+# assign idx to word
+# divide into prefix and suffix and check if palinfrome in two cases
 class Solution:
     def palindromePairs(self, words: List[str]) -> List[List[int]]:
         dic = {word: i for i, word in enumerate(words)}
@@ -15,3 +17,4 @@ class Solution:
                     if reverse != word and reverse in dic:
                         res.append([i, dic[reverse]])    
         return res
+
