@@ -1,3 +1,4 @@
+# mind the way to present binary, ex. 0b110
 class Solution:
     def validUtf8(self, data: List[int]) -> bool:
         start = 0

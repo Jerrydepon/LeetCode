@@ -1,3 +1,6 @@
+# use a pointer for putting number, which move to next if number is not zero
+# use another pointer to iterate through nums
+# after iteration, put zeros from index to the end
 class Solution:
     def moveZeroes(self, nums: List[int]) -> None:
         """

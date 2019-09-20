@@ -1,3 +1,5 @@
+# use a Counter to make sure there are less than three baskets
+# two pointers for beginning and end index
 import collections
 class Solution:
     def totalFruit(self, tree: List[int]) -> int:

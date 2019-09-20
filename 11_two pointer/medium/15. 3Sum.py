@@ -1,6 +1,10 @@
+# sort the array first
+# iterate from 0 to third to last number
+# each number pairs with other two numbers from converging inward pointers
+# mind how to deal with duplicated number
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
-        if not nums:
+        if len(nums) < 3:
             return []
         output = []
         nums = sorted(nums)

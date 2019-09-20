@@ -1,3 +1,6 @@
+# keep the height of water as minimum of two walls
+# from two ends to converge inward and keep the higher wall
+# if the bar is lower than the height of water, add to the result
 class Solution:
     def trap(self, height: List[int]) -> int:
         if not height:

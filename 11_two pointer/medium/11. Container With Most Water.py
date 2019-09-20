@@ -1,3 +1,6 @@
+# from two ends, calculate the maximum containing water by two walls
+# keep track of the maximum result
+# converge inward and keep the higher wall
 class Solution:
     def maxArea(self, height: List[int]) -> int:
         l, r, res = 0, len(height)-1, 0
