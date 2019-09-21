@@ -1,3 +1,6 @@
+# finish task with most number first
+# heappush(heap, (-v, k))
+# modify the number of tasks left for every loop
 from heapq import heappush, heappop
 from collections import Counter
 

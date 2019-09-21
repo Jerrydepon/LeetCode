@@ -1,3 +1,5 @@
+# use a dictionary to store key: index, value: distance
+# sort the keys based on value and get the first K elements
 class Solution:
     def kClosest(self, points: List[List[int]], K: int) -> List[List[int]]:
         dic = {}

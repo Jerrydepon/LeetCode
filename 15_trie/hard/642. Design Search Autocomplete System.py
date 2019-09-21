@@ -1,3 +1,4 @@
+# too hard for now
 class TrieNode(object):
     def __init__(self):
         self.children = {}

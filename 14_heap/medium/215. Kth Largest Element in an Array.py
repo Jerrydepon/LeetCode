@@ -1,3 +1,4 @@
+# mind the moethod between max heap and min heap
 import heapq
 
 class Solution:

@@ -4,6 +4,8 @@
 #         self.val = x
 #         self.next = None
 
+# use heap to decide which node has smallest value (head.val, i, head)
+# create dummy node for the start of new linked list
 import heapq
 
 class Solution:

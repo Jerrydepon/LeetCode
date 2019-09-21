@@ -1,3 +1,4 @@
+# use heap to keep track of the highest building at certain position
 import heapq
 
 class Solution:
@@ -5,6 +6,7 @@ class Solution:
         events = [(L, -H, R) for L, R, H in buildings]
         events += [(R, 0, 0) for _, R, _ in buildings]
         events.sort()
+        # print(events)
         
         res = [[0, 0]]
         hh = [(0, float('inf'))]

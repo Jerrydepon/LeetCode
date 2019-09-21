@@ -1,3 +1,7 @@
+# use a heap for smaller numbers, and a heap for larger number
+# mind the minus sign for smaller heap
+# keep the difference of size of two heap no more than 1
+# two cases for median
 import heapq
 
 class MedianFinder:

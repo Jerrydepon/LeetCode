@@ -1,3 +1,5 @@
+# the result must lie between largest number and the sum
+# use binary search to check if satisfied and decrease the scope for minimum result
 class Solution:
     def splitArray(self, nums: List[int], m: int) -> int:
         l, h = max(nums), sum(nums)
