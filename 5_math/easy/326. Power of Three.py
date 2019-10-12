@@ -1,4 +1,4 @@
-# find the greatest integer power of 3 (in the range of 2**32 -> 32 bits)
+# find the greatest power of 3 integer (in the range of 2**32 -> 32 bits)
 class Solution:
     def isPowerOfThree(self, n: int) -> bool:
         # if n <= 0:
